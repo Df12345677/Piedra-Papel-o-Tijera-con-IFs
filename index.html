@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piedra Papel o Tijera</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wgh@500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./piedra-papel-tijera.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <h1>Piedra papel o tijera</h1>
+    <div class="container">
+      <div class="puntos" id="puntos">
+        <h4>Tu: <span id="puntos-jugador">0</span></h4>
+        <h4>Pc: <span id="puntos-enemigo">0</span></h4>
+      </div>
+      <div class="parte-botones" id="parte-botones">
+        <button class="botones" id="piedra">Piedra</button>
+        <button class="botones" id="papel">Papel</button>
+        <button class="botones" id="tijera">Tijera</button>
+      </div>
+
+      <div class="parte-resultado" id="parte-resultado">
+        <h2>
+          Tu escogiste <span id="span-eleccion-jugador">Piedra</span> y pc
+          escogio <span id="span-eleccion-pc">Papel</span>,
+          <span id="span-resultado-juego">Perdiste</span>
+        </h2>
+        <button id="boton-ok" class="boton-ok">OK</button>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

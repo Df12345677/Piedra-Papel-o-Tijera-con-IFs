@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Maven Pro", sans-serif;
+}
+
+:root {
+  --first: #a75d5d;
+  --second: #d3756b;
+  --third: #f0997d;
+  --fourth: #ffc3a1;
+  --blue: #86a3b8;
+}
+body {
+  background-color: #a75d5d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 50px;
+}
+
+body h1 {
+  color: var(--blue);
+}
+
+body div.container {
+  display: flex;
+}
+
+body div.container div.puntos {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid var(--fourth);
+  position: absolute;
+  top: 20px;
+  height: 70px;
+  width: 110px;
+  justify-content: center;
+  padding: 4px;
+  right: 20px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+body div.container div.puntos h4 {
+  color: var(--blue);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+body div.container div.puntos h4 span {
+  color: var(--third);
+  font-size: 1.1rem;
+}
+
+body div.parte-botones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+body div.parte-botones button {
+  border: 3px solid var(--fourth);
+  height: 80px;
+  width: 80px;
+  background-color: transparent;
+  color: var(--blue);
+  font-size: 1.1rem;
+  transition: 1s;
+  position: relative;
+  outline: none;
+}
+
+body div.parte-botones button:hover {
+  color: var(--third);
+  border: 3px solid var(--third);
+  transform: rotate(2deg);
+}
+
+body div.parte-botones button:active {
+  box-shadow: 1px 2px 10px var(--fourth);
+}
+
+body div.parte-resultado {
+  height: 300px;
+  width: 350px;
+  background-color: var(--second);
+  border-radius: 10px;
+  padding: 10px;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body div.parte-resultado h2 {
+  color: var(--fourth);
+  text-align: center;
+}
+
+body div.parte-resultado button {
+  color: var(--second);
+  background-color: var(--fourth);
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  align-self: end;
+  justify-self: end;
+}
